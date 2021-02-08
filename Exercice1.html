@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 1</title>
+    <style>
+      * {
+        margin-bottom: 10px;
+      }
+      form {
+        border: 1px solid black;
+        padding: 10px;
+        max-width: 500px;
+        margin: auto;
+      }
+      .hide {
+        visibility: hidden;
+      }
+      .show {
+        visibility: visible;
+        display: block;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>Inscription</h2>
+      <label>Nom :</label> <input type="text" id="nom" />
+      <label>Prenom :</label> <input type="text" id="prenom" /><br />
+      <label>Age :</label> <input type="text" id="age" /><br />
+      <label>Sexe : </label>
+      <input type="radio" name="sexe" value="homme" checked />Homme
+      <input type="radio" name="sexe" value="femme" />Femme
+      <br />
+      <label>Nationalite : </label>
+      <input
+        type="radio"
+        name="nationalite"
+        checked
+        id="maroc"
+        value="maroc"
+      />Marocaine
+      <input
+        type="radio"
+        name="nationalite"
+        id="etrangere"
+        value="etrangere"
+      />Etrangere
+      <select id="pays" class="hide">
+        <option>France</option>
+        <option>U.S.A</option>
+        <option>Canada</option>
+      </select>
+      <br />
+      <label>Interet :</label><br />
+      <input type="checkbox" class="interet" value="Lecture" />Lecture
+      <input type="checkbox" class="interet" value="Cinema" />Cinema
+      <input type="checkbox" class="interet" value="Sports" />Sports <br />
+      <input type="checkbox" class="interet" value="Theatre" />Theatre
+      <input type="checkbox" class="interet" value="Voyage" />Voyage
+      <input type="checkbox" class="interet" value="Science" />Science <br />
+      <center>
+        <input type="button" value="afficher" id="afficher" />
+      </center>
+      <p value="s" id="message"></p>
+    </form>
+    <script src="./Exercice1.js"></script>
+  </body>
+</html>
